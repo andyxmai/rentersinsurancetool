@@ -1,0 +1,15 @@
+.header-navbar {
+  margin: 0 !important;
+  background-color: white !important;
+}
+
+.header-container {
+  padding: 10px 50px !important;
+}
+
+.brand {
+  color: #FF9128 !important;
+  font-size: 24px !important;
+  letter-spacing: 1px !important;
+  font-weight: bold;
+}

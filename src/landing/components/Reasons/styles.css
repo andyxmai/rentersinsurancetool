@@ -1,0 +1,26 @@
+.header-block {
+  padding-bottom: 10px;
+}
+
+.reasons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+
+.reason {
+  width: 259px;
+}
+
+.reason-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.reason-body {
+  font-size: 16px;
+  padding: 15px;
+}

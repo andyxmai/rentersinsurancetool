@@ -1,0 +1,24 @@
+.hero {
+  background-color: #48CBE4;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  padding: 40px 0px;
+}
+
+.hero-title {
+  width: 50%;
+  margin: auto;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+}
+
+.zipcode-form {
+}
+
+.zipcode-formgroup {
+  margin-right: 10px;
+}

@@ -1,0 +1,59 @@
+body {
+  padding-top: 70px !important;
+}
+
+h1,h2,h3 {
+  color: #464646;
+}
+
+h4, h5 {
+  color: #929292;
+  letter-spacing: 0.53px
+}
+
+.App {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.navitem {
+  padding: 0
+}
+
+.dark-gray {
+  color: #464646;
+}
+
+.light-gray {
+  color: #929292;
+}
+
+.title {
+  padding: 10px;
+  font-size: 36px;
+}
+.subtitle {
+  padding: 0px;
+  font-size: 18px;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
