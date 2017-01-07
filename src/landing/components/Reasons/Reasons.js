@@ -21,7 +21,7 @@ function Reasons () {
         />
         <ReasonContainer
           title='Confident Choice'
-          body='Key concepts are explained so you know you are getting the right renters insuranc policy.'
+          body='Key concepts are explained so you know you are getting the right renters insurance policy.'
         />
       </div>
     </div>

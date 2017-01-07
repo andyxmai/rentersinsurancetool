@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Landing from '../../../landing/components/Landing/Landing'
 import Reasons from '../../../landing/components/Reasons/Reasons'
 import Carriers from '../../../landing/components/Carriers/Carriers'
 import FindQuotes from '../../../landing/components/FindQuotes/FindQuotes'
 
-class LandingContainer extends Component {
+const LandingContainer = React.createClass({
   render () {
     return (
       <div className='text-center'>
@@ -15,6 +15,6 @@ class LandingContainer extends Component {
       </div>
     )
   }
-}
+})
 
 export default LandingContainer;

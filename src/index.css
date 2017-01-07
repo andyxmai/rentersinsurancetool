@@ -1,5 +1,43 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  padding-top: 70px;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 16px;
+  letter-spacing: 0.48px;
+}
+
+h1,h2,h3 {
+  color: #464646;
+}
+
+h4, h5 {
+  color: #929292;
+  letter-spacing: 0.53px
+}
+
+.navitem {
+  padding: 0
+}
+
+.dark-gray {
+  color: #464646;
+}
+
+.light-gray {
+  color: #929292;
+}
+
+.title {
+  padding: 10px;
+  font-size: 36px;
+}
+.subtitle {
+  padding: 0px;
+  font-size: 18px;
+}
+
+.btn-primary {
+  background-color: #FF9128 !important;
+  border-color: #FF9734 !important;
 }

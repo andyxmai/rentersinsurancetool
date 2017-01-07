@@ -1,0 +1,50 @@
+.lowest-quotes {
+  margin-bottom: 40px;
+}
+
+.quote {
+  border: 1px solid #8A8A8A;
+  border-radius: 5px;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dark-border {
+  border: 1px solid #8A8A8A;
+}
+
+.light-border {
+  border: 1px solid #EBEBEB;
+}
+
+.inner-quote {
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.carrier-avatar {
+  width: 80px;
+}
+
+.carrier-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.carrier-price {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.amount {
+  font-size: 30px;
+  color: #07C5AC;
+}
+
+.price {
+  margin-bottom: 5px;
+}

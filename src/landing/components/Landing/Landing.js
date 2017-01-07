@@ -16,7 +16,7 @@ function Landing () {
             <FormGroup controlId="formInlineZipcode" bsSize="large" className='zipcode-formgroup'>
               <FormControl type="text" placeholder="zipcode" />
             </FormGroup>
-            <Button type="submit" bsSize="large" bsStyle="warning">
+            <Button type="submit" bsSize="large" bsStyle="primary">
               Get quotes
             </Button>
           </Form>

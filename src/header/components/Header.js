@@ -13,10 +13,10 @@ function Header () {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand brand" href="#">RentersInsuranceTool</a>
+            <a className="navbar-brand brand" href="/">RentersInsuranceTool</a>
           </div>
           <div className="collapse navbar-collapse">
-            <ul className="nav navbar-nav navbar-right">
+            <ul className="nav navbar-nav navbar-right links">
               <li><a href="#">Renters Insurance 101</a></li>
               <li><a href="#">Blog</a></li>
             </ul>
