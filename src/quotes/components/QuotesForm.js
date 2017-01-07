@@ -4,7 +4,7 @@ import { Form, Col, FormControl, FormGroup, Button, ControlLabel, Checkbox, Help
 
 function QuotesForm () {
   return (
-    <div className='quotes-form'>
+    <div className='quotes-form container section'>
       <div className='header-block'>
         <h2>Just one more step</h2>
         <p className='subtitle light-gray'>Tell us a little more about your living situation</p>

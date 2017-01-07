@@ -48,3 +48,15 @@
 .price {
   margin-bottom: 5px;
 }
+
+.policy-detail {
+  padding: 10px;
+}
+.coverage-name {
+  font-weight: bold;
+}
+
+.coverage-amount {
+  font-weight: bold;
+  color: #929292;
+}

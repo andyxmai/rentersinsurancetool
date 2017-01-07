@@ -9,6 +9,7 @@ const QuotesContainer = React.createClass({
         <QuotesForm />
         <br /><br />
         <Quotes />
+        <br /><br />
       </div>
     )
   }

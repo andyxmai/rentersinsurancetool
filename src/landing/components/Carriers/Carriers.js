@@ -7,7 +7,7 @@ import allstate from './allstate.png';
 
 function Carriers () {
   return (
-    <div className='container'>
+    <div className='container section'>
       <div className='header-block'>
         <h1 className='title dark-gray'>Top insurance companies</h1>
         <h4 className='subtitle light-gray'>All the insurers we show are J.D. Power rated.</h4>

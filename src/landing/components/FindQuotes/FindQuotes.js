@@ -5,7 +5,7 @@ import { Form, FormGroup, FormControl, Button } from 'react-bootstrap'
 function FindQuotes () {
   return (
     <div className='findquotes'>
-      <div className='container'>
+      <div className='container section'>
         <div className='header-block'>
           <h1 className='title dark-gray'>Find your renters insurance now</h1>
         </div>

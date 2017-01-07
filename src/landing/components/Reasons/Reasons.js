@@ -4,7 +4,7 @@ import ReasonContainer from './ReasonContainer'
 
 function Reasons () {
   return (
-    <div className='container'>
+    <div className='container section'>
       <div className='header-block'>
         <h1 className='title dark-gray'>How we help you</h1>
         <h4 className='subtitle light-gray'>We do the legwork of compiling all info in one place.</h4>

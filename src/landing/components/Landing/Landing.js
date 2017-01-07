@@ -5,7 +5,7 @@ import './styles.css';
 function Landing () {
   return (
     <div className='hero'>
-      <div className='container'>
+      <div className='container section'>
         <h1 className='hero-title'>Start and end your renters insurance research here</h1>
         <br/>
         <h4 className='subtitle'>Stop the guesswork and complacency of finding your renters insurance.</h4>
