@@ -1,0 +1,135 @@
+{
+  "94301-1-hasNoPets": [
+    {
+      "name": "farmers",
+      "price": "12.21"
+    },
+    {
+      "name": "statefarm",
+      "price": "12.25"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "16.00"
+    },
+    {
+      "name": "progressive",
+      "price": "16.30"
+    }
+  ],
+  "94301-5-hasNoPets": [
+    {
+      "name": "farmers",
+      "price": "10.83"
+    },
+    {
+      "name": "progressive",
+      "price": "11.90"
+    },
+    {
+      "name": "statefarm",
+      "price": "12.25"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "16.00"
+    }
+  ],
+
+  "94303-1-hasNoPets": [
+    {
+      "name": "statefarm",
+      "price": "12.25"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "16.00"
+    },
+    {
+      "name": "progressive",
+      "price": "16.30"
+    },
+    {
+      "name": "farmers",
+      "price": "17.47"
+    }
+  ],
+  "94303-5-hasNoPets": [
+    {
+      "name": "progressive",
+      "price": "11.90"
+    },
+    {
+      "name": "statefarm",
+      "price": "12.25"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "farmers",
+      "price": "14.50"
+    },
+    {
+      "name": "libertymutual",
+      "price": "16.00"
+    }
+  ],
+  "94306-1-hasNoPets": [
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "farmers",
+      "price": "12.21"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "progressive",
+      "price": "14.71"
+    },
+    {
+      "name": "libertymutual",
+      "price": "16.00"
+    }
+  ],
+  "94306-5-hasNoPets": [
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "farmers",
+      "price": "10.83"
+    },
+    {
+      "name": "progressive",
+      "price": "10.99"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "16.00"
+    }
+  ]
+}

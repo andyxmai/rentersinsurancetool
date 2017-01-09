@@ -6,8 +6,8 @@ function Footer () {
     <div className='footer'>
       <div className='container section'>
         <div className='header-block'>
-          <h1 className='title'>Questions?</h1>
-          <h4 className='subtitle'>Email us at rentersinsurancetool@gmail.com</h4>
+          <h1 className='title white'>Questions?</h1>
+          <h4 className='subtitle white'>Email us at rentersinsurancetool@gmail.com</h4>
         </div>
       </div>
     </div>

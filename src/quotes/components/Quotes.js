@@ -15,23 +15,23 @@ function Quotes (props) {
         <div className='lowest-quotes'>
           <h4 className='dark-gray'>Lowest quote</h4>
           <Quote
-            name={props.quotes[0].name}
-            price={props.quotes[0].price}
-            link={props.quotes[0].link}
-            image={props.quotes[0].image}
+            name={props.firstQuote.name}
+            price={props.firstQuote.price}
+            link={props.firstQuote.link}
+            image={props.firstQuote.image}
           />
         </div>
         <div className='more-quotes'>
           <h4 className='dark-gray'>More quotes</h4>
-          {[...props.quotes.splice(0, 1)].map((x, i) =>
+          {props.moreQuotes.map((quote, i) => (
             <Quote
               key={i}
-              name={props.quotes[i].name}
-              price={props.quotes[i].price}
-              image={props.quotes[i].image}
-              link={props.quotes[i].link}
+              name={quote.name}
+              price={quote.price}
+              image={quote.image}
+              link={quote.link}
             />
-          )}
+          ))}
         </div>
         <br />
         <div className='policy-details'>

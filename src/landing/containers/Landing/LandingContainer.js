@@ -39,7 +39,11 @@ class LandingContainer extends Component {
         />
         <Reasons />
         <Carriers />
-        <FindQuotes />
+        <FindQuotes
+          onSubmitZipcode={(e) => this.handleSubmitZipcode(e)}
+          onUpdateZipcdoe={(e) => this.handleUpdateZipcode(e)}
+          zipcode={this.state.zipcode}
+        />
       </div>
     )
   }
