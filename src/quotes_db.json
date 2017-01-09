@@ -1,5 +1,5 @@
 {
-  "94301-1-hasNoPets": [
+  "94301-1": [
     {
       "name": "farmers",
       "price": "12.21"
@@ -21,7 +21,7 @@
       "price": "16.30"
     }
   ],
-  "94301-5-hasNoPets": [
+  "94301-5": [
     {
       "name": "farmers",
       "price": "10.83"
@@ -44,7 +44,7 @@
     }
   ],
 
-  "94303-1-hasNoPets": [
+  "94303-1": [
     {
       "name": "statefarm",
       "price": "12.25"
@@ -66,7 +66,7 @@
       "price": "17.47"
     }
   ],
-  "94303-5-hasNoPets": [
+  "94303-5": [
     {
       "name": "progressive",
       "price": "11.90"
@@ -88,7 +88,7 @@
       "price": "16.00"
     }
   ],
-  "94306-1-hasNoPets": [
+  "94306-1": [
     {
       "name": "statefarm",
       "price": "10.83"
@@ -110,7 +110,7 @@
       "price": "16.00"
     }
   ],
-  "94306-5-hasNoPets": [
+  "94306-5": [
     {
       "name": "statefarm",
       "price": "10.83"
@@ -130,6 +130,270 @@
     {
       "name": "libertymutual",
       "price": "16.00"
+    }
+  ],
+  "94040-1": [
+    {
+      "name": "progressive",
+      "price": "14.71"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "12.21"
+    }
+  ],
+  "94040-2": [
+    {
+      "name": "progressive",
+      "price": "12.51"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "11.11"
+    }
+  ],
+  "94040-4": [
+    {
+      "name": "progressive",
+      "price": "10.99"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "11.11"
+    }
+  ],
+  "94040-5": [
+    {
+      "name": "progressive",
+      "price": "10.99"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "10.83"
+    }
+  ],
+  "94041-1": [
+    {
+      "name": "progressive",
+      "price": "14.71"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "12.21"
+    }
+  ],
+  "94041-2": [
+    {
+      "name": "progressive",
+      "price": "12.51"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "11.11"
+    }
+  ],
+  "94041-4": [
+    {
+      "name": "progressive",
+      "price": "10.99"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "11.11"
+    }
+  ],
+  "94041-5": [
+    {
+      "name": "progressive",
+      "price": "10.99"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "10.83"
+    }
+  ],
+  "94043-1": [
+    {
+      "name": "progressive",
+      "price": "14.71"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "12.21"
+    }
+  ],
+  "94043-2": [
+    {
+      "name": "progressive",
+      "price": "12.51"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "11.11"
+    }
+  ],
+  "94041-4": [
+    {
+      "name": "progressive",
+      "price": "10.99"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "11.11"
+    }
+  ],
+  "94041-5": [
+    {
+      "name": "progressive",
+      "price": "10.99"
+    },
+    {
+      "name": "statefarm",
+      "price": "10.83"
+    },
+    {
+      "name": "allstate",
+      "price": "14.00"
+    },
+    {
+      "name": "libertymutual",
+      "price": "15.00"
+    },
+    {
+      "name": "farmers",
+      "price": "10.83"
     }
   ]
 }

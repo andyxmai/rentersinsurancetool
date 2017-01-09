@@ -50,14 +50,6 @@ function QuotesForm (props) {
           </FormGroup>
           <FormGroup controlId="formHorizontalEmail" bsSize="large">
             <Col componentClass={ControlLabel} sm={2}>
-              Has pets?
-            </Col>
-            <Col sm={1}>
-              <Checkbox checked={props.hasPets} onChange={props.onUpdateHasPets}>Yes</Checkbox>
-            </Col>
-          </FormGroup>
-          <FormGroup controlId="formHorizontalEmail" bsSize="large">
-            <Col componentClass={ControlLabel} sm={2}>
               Email
             </Col>
             <Col sm={4}>

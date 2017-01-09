@@ -15,7 +15,6 @@ class QuotesContainer extends Component {
       zipcode: '',
       buildingType: 'apartment',
       numUnits: '1',
-      hasPets: false,
       email: '',
       quotes: [],
       firstQuote: {},
@@ -40,12 +39,6 @@ class QuotesContainer extends Component {
     this.setState({
       numUnits: e.target.value
     });
-  }
-
-  handleUpdateHasPets (e) {
-    this.setState({
-      hasPets: !this.state.hasPets
-    })
   }
 
   handleUpdateEmail (e) {
@@ -104,22 +97,18 @@ class QuotesContainer extends Component {
   }
 
   createQuoteKey (zipcode, numUnits, hasPets) {
-    var petsKey = 'hasPets'
-    if (!hasPets) {
-      petsKey = 'hasNoPets'
-    }
-
-    return `${zipcode}-${numUnits}-${petsKey}`
+    return `${zipcode}-${numUnits}`
   }
 
   handleSubmitQuote (e) {
     e.preventDefault();
     console.log(this.state);
-    const { zipcode, buildingType, numUnits, hasPets, email } = this.state;
+    const { zipcode, buildingType, numUnits, email } = this.state;
+
     // get quotes
-    const key = this.createQuoteKey(zipcode, numUnits, hasPets);
-    console.log(key);
-    const quotes = quotesDB[key];
+    const key = this.createQuoteKey(zipcode, numUnits);
+    var quotes = quotesDB[key];
+    quotes.sort(function(a,b) {return (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0);} );
     var quoteObjects = this.createQuoteObjects(quotes);
 
     this.setState({
@@ -140,11 +129,9 @@ class QuotesContainer extends Component {
           zipcode={this.state.zipcode}
           buildingType={this.state.buildingType}
           numUnits={this.state.numUnits}
-          hasPets={this.state.hasPets}
           email={this.state.email}
           onUpdateBuildingType={(e) => this.handleUpdateBuildingType(e)}
           onUpdateNumUnits={(e) => this.handleUpdateNumUnits(e)}
-          onUpdateHasPets={(e) => this.handleUpdateHasPets(e)}
           onUpdateEmail={(e) => this.handleUpdateEmail(e)}
           onSubmitQuote={(e) => this.handleSubmitQuote(e)}
         />
