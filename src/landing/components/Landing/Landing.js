@@ -6,9 +6,8 @@ function Landing (props) {
   return (
     <div className='hero'>
       <div className='container section'>
-        <h1 className='hero-title white'>Start and end your renters insurance research here</h1>
+        <h1 className='hero-title white'>End your renters insurance research here</h1>
         <br/>
-        <h4 className='subtitle white'>Stop the guesswork and complacency of finding your renters insurance.</h4>
         <h4 className='subtitle white'>Instantly compare quotes from 10+ insurance companies to find your best policy.</h4>
         <br/><br/><br/>
         <div className="zipcode-form">
