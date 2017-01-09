@@ -67,8 +67,8 @@ function QuotesForm (props) {
           </FormGroup>
           <FormGroup>
             <Col smOffset={2} sm={10}>
-              <Button type="submit" bsSize="lg" bsStyle="danger">
-                Leggo!
+              <Button type="submit" bsSize="lg" bsStyle="danger" disabled={!props.email || !props.zipcode}>
+                Done!
               </Button>
             </Col>
           </FormGroup>

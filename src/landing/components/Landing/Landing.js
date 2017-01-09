@@ -23,7 +23,7 @@ function Landing (props) {
                 onChange={props.onUpdateZipcdoe}
                 value={props.zipcode} />
             </FormGroup>
-            <Button type="submit" bsSize="large" bsStyle="primary">
+            <Button type="submit" bsSize="large" bsStyle="primary" disabled={props.zipcode.length !== 5}>
               Get quotes
             </Button>
           </Form>

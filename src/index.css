@@ -45,3 +45,8 @@ h4, h5 {
   background-color: #FF9128;
   border-color: #FF9734;
 }
+
+.btn-primary:hover {
+  background-color: #DD6D03;
+  border-color: #AD5400;
+}
