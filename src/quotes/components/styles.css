@@ -2,20 +2,15 @@
   margin-bottom: 40px;
 }
 
+.more-quotes {
+}
+
 .quote {
-  border: 1px solid #8A8A8A;
+  border: 1px solid #EBEBEB;
   border-radius: 5px;
   width: 80%;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.dark-border {
-  border: 1px solid #8A8A8A;
-}
-
-.light-border {
-  border: 1px solid #EBEBEB;
 }
 
 .inner-quote {
@@ -52,6 +47,7 @@
 .policy-detail {
   padding: 10px;
 }
+
 .coverage-name {
   font-weight: bold;
 }

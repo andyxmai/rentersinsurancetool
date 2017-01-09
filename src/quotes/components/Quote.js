@@ -1,24 +1,23 @@
 import React from 'react';
 import './styles.css';
-import farmers from './images/farmers.jpg';
 import { Button } from 'react-bootstrap';
 
-function Quote () {
+function Quote (props) {
   return (
-    <div className='quote dark-border'>
+    <div className='quote'>
       <div className='inner-quote'>
         <div>
-          <img src={farmers} className='img-responsive carrier-avatar' alt='avatar' />
+          <img src={props.image} className='img-responsive carrier-avatar' alt='avatar' />
         </div>
         <div className="carrier-name">
-          Farmers Insurance
+          {props.name}
         </div>
         <div className="carrier-price">
           <div className='price'>
-            <span className='amount'>$10.83</span> / month
+            <span className='amount'>${props.price}</span> / month
           </div>
           <div className='text-center'>
-            <Button bsStyle="primary">
+            <Button bsStyle="primary" href={props.link} target="_blank">
               Apply Now
             </Button>
           </div>

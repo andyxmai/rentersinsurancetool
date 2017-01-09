@@ -4,8 +4,8 @@ import Quote from './Quote';
 import PolicyDetail from './PolicyDetail'
 import { Grid, Row, Col } from 'react-bootstrap';
 
-function Quotes () {
-  return (
+function Quotes (props) {
+  return props.quotes.length ?
     <div className='quotes container'>
       <div className='header-block'>
         <h2>Your quotes</h2>
@@ -13,19 +13,29 @@ function Quotes () {
       </div>
       <div>
         <div className='lowest-quotes'>
-          <h4>Lowest Quote</h4>
-          <Quote />
+          <h4 className='dark-gray'>Lowest quote</h4>
+          <Quote
+            name={props.quotes[0].name}
+            price={props.quotes[0].price}
+            link={props.quotes[0].link}
+            image={props.quotes[0].image}
+          />
         </div>
         <div className='more-quotes'>
-          <h4>More quotes</h4>
-          <Quote />
-          <Quote />
-          <Quote />
-          <Quote />
+          <h4 className='dark-gray'>More quotes</h4>
+          {[...props.quotes.splice(0, 1)].map((x, i) =>
+            <Quote
+              key={i}
+              name={props.quotes[i].name}
+              price={props.quotes[i].price}
+              image={props.quotes[i].image}
+              link={props.quotes[i].link}
+            />
+          )}
         </div>
         <br />
         <div className='policy-details'>
-          <h4>Policy details</h4>
+          <h4 className='dark-gray'>Policy details</h4>
           <p className='light-gray'>We think this standard package will fit your needs the best. If not, let us know and we’ll work together.</p>
           <Grid>
             <Row className="show-grid">
@@ -41,7 +51,7 @@ function Quotes () {
         </div>
       </div>
     </div>
-  )
+    : null
 }
 
 export default Quotes;

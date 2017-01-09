@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.css';
 import { Form, Col, FormControl, FormGroup, Button, ControlLabel, Checkbox, HelpBlock } from 'react-bootstrap';
 
-function QuotesForm () {
+function QuotesForm (props) {
   return (
     <div className='quotes-form container section'>
       <div className='header-block'>
@@ -10,23 +10,15 @@ function QuotesForm () {
         <p className='subtitle light-gray'>Tell us a little more about your living situation</p>
       </div>
       <div>
-        <Form horizontal>
+        <Form horizontal onSubmit={props.onSubmitQuote}>
           <FormGroup controlId="formHorizontalEmail" bsSize="large">
             <Col componentClass={ControlLabel} sm={2}>
               Zipcode
             </Col>
             <Col sm={1}>
             <FormControl.Static>
-              94303
+              {props.zipcode}
             </FormControl.Static>
-            </Col>
-          </FormGroup>
-          <FormGroup controlId="formHorizontalEmail" bsSize="large">
-            <Col componentClass={ControlLabel} sm={2}>
-              Has pets?
-            </Col>
-            <Col sm={1}>
-              <Checkbox>Yes</Checkbox>
             </Col>
           </FormGroup>
           <FormGroup controlId="formHorizontalEmail" bsSize="large">
@@ -34,7 +26,7 @@ function QuotesForm () {
               Type of building
             </Col>
             <Col sm={2}>
-              <FormControl componentClass="select" placeholder="select">
+              <FormControl componentClass="select" onChange={props.onUpdateBuildingType} value={props.buildingType} placeholder="select">
                 <option value="apartment">Apartment</option>
                 <option value="condo">Condo</option>
                 <option value="townhouse">Townhouse</option>
@@ -47,7 +39,7 @@ function QuotesForm () {
               Number of units
             </Col>
             <Col sm={1}>
-              <FormControl componentClass="select" placeholder="select">
+              <FormControl componentClass="select" onChange={props.onUpdateNumUnits} value={props.numUnits} placeholder="select">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -58,10 +50,18 @@ function QuotesForm () {
           </FormGroup>
           <FormGroup controlId="formHorizontalEmail" bsSize="large">
             <Col componentClass={ControlLabel} sm={2}>
+              Has pets?
+            </Col>
+            <Col sm={1}>
+              <Checkbox checked={props.hasPets} onChange={props.onUpdateHasPets}>Yes</Checkbox>
+            </Col>
+          </FormGroup>
+          <FormGroup controlId="formHorizontalEmail" bsSize="large">
+            <Col componentClass={ControlLabel} sm={2}>
               Email
             </Col>
             <Col sm={4}>
-              <FormControl type="email" placeholder="Email" />
+              <FormControl type="email" onChange={props.onUpdateEmail} value={props.email} placeholder="Email" />
               <HelpBlock>To help us retrieve your quote easier.</HelpBlock>
             </Col>
           </FormGroup>
