@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles.css';
+import { Link } from 'react-router'
 
 function Header () {
   return (
@@ -17,7 +18,7 @@ function Header () {
           </div>
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav navbar-right links">
-              <li>Renters Insurance 101</li>
+              <li><Link to='/rentersinsurance101'>Renters Insurance 101</Link></li>
               <li><a href="https://medium.com/me/stories/public" target="_blank">Blog</a></li>
             </ul>
           </div>
