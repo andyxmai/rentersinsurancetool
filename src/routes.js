@@ -13,9 +13,9 @@ const Routes = (props) => (
       <IndexRoute component={LandingContainer} />
       <Route path="quotes" component={QuotesContainer} />
       <Route path="rentersinsurance101" component={RI101Container} />
-      <Route path="*" component={NotFound} />
     </Route>
-    <Route path="rentersinsurance101" component={RI101Container} />
+    <Route path="/rentersinsurance101" component={RI101Container} />
+    <Route path="*" component={NotFound} />
   </Router>
 );
 
