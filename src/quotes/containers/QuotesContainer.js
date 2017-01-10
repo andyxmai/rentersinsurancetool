@@ -108,7 +108,7 @@ class QuotesContainer extends Component {
     // get quotes
     const key = this.createQuoteKey(zipcode, numUnits);
     var quotes = quotesDB[key];
-    var properties = {
+    var eventProperties = {
       'zipcode': this.state.zipcode,
       'email': this.state.email,
       'buildingType': this.state.buildingType,
@@ -117,7 +117,7 @@ class QuotesContainer extends Component {
 
     if (!quotes) {
       alert("Oh no! We don't have your zipcode in our database. Email us and we'll send you a quote.");
-      window.amplitude.getInstance().logEvent('quotes_zipcode_not_in_database', properties);
+      window.amplitude.getInstance().logEvent('quotes_zipcode_not_in_database', eventProperties);
 
       return;
     }
