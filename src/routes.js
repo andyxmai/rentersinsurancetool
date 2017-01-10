@@ -15,6 +15,7 @@ const Routes = (props) => (
       <Route path="rentersinsurance101" component={RI101Container} />
       <Route path="*" component={NotFound} />
     </Route>
+    <Route path="rentersinsurance101" component={RI101Container} />
   </Router>
 );
 
