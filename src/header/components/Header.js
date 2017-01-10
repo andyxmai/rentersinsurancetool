@@ -17,8 +17,8 @@ function Header () {
           </div>
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav navbar-right links">
-              <li><a href="rentersinsurance101">Renters Insurance 101</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="/rentersinsurance101">Renters Insurance 101</a></li>
+              <li><a href="https://medium.com/me/stories/public" target="_blank">Blog</a></li>
             </ul>
           </div>
         </div>

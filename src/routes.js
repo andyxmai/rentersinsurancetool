@@ -14,7 +14,6 @@ const Routes = (props) => (
       <Route path="quotes" component={QuotesContainer} />
       <Route path="rentersinsurance101" component={RI101Container} />
     </Route>
-    <Route path="/rentersinsurance101" component={RI101Container} />
     <Route path="*" component={NotFound} />
   </Router>
 );
