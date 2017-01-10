@@ -103,15 +103,32 @@ class QuotesContainer extends Component {
   handleSubmitQuote (e) {
     e.preventDefault();
     console.log(this.state);
-    const { zipcode, buildingType, numUnits, email } = this.state;
+    const { zipcode, numUnits } = this.state;
 
     // get quotes
     const key = this.createQuoteKey(zipcode, numUnits);
     var quotes = quotesDB[key];
     if (!quotes) {
       alert("Oh no! We don't have your zipcode in our database. Email us and we'll send you a quote.");
+
+      var properties = {
+        'zipcode': this.state.zipcode,
+        'email': this.state.email,
+        'buildingType': this.state.buildingType,
+        'numUnits': this.state.numUnits
+      }
+      window.amplitude.getInstance().logEvent('quotes_zipcode_not_in_database', properties);
+
       return;
     }
+
+    var eventProperties = {
+      'zipcode': this.state.zipcode,
+      'email': this.state.email,
+      'buildingType': this.state.buildingType,
+      'numUnits': this.state.numUnits
+    }
+    window.amplitude.getInstance().logEvent('new_quotes_submitted', eventProperties);
 
     quotes.sort(function(a,b) {return (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0);} );
     var quoteObjects = this.createQuoteObjects(quotes);
