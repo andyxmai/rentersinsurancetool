@@ -26,11 +26,12 @@ class LandingContainer extends Component {
     e.preventDefault();
     const { zipcode } = this.state;
 
+    var eventProperties = {
+      'zipcode': zipcode,
+    };
+
     if (!this.hasZipcodeInDB(zipcode)) {
       alert("Oh no! We don't have your zipcode in our database. Email us and we'll send you a quote.");
-      var eventProperties = {
-        'zipcode': zipcode,
-      }
       window.amplitude.getInstance().logEvent('landing_zipcode_not_in_database', eventProperties);
 
       return;
@@ -42,6 +43,7 @@ class LandingContainer extends Component {
         zipcode,
       }
     })
+
     window.amplitude.getInstance().logEvent('landing_zipcode_submit', eventProperties);
   }
 
