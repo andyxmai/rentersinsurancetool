@@ -41,12 +41,12 @@ h4, h5 {
   font-size: 18px;
 }
 
-.btn-primary {
+.btn-warning, .btn-warning:link, .btn-warning:visited, .btn-warning:active {
   background-color: #FF9128;
   border-color: #FF9734;
 }
 
-.btn-primary:hover, .btn-primary:focus {
+.btn-warning:hover {
   background-color: #DD6D03;
   border-color: #AD5400;
 }

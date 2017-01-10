@@ -108,6 +108,11 @@ class QuotesContainer extends Component {
     // get quotes
     const key = this.createQuoteKey(zipcode, numUnits);
     var quotes = quotesDB[key];
+    if (!quotes) {
+      alert("Oh no! We don't have your zipcode in our database. Email us and we'll send you a quote.");
+      return;
+    }
+
     quotes.sort(function(a,b) {return (a.price > b.price) ? 1 : ((b.price > a.price) ? -1 : 0);} );
     var quoteObjects = this.createQuoteObjects(quotes);
 

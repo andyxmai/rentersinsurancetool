@@ -3,6 +3,7 @@ import Landing from '../../../landing/components/Landing/Landing'
 import Reasons from '../../../landing/components/Reasons/Reasons'
 import Carriers from '../../../landing/components/Carriers/Carriers'
 import FindQuotes from '../../../landing/components/FindQuotes/FindQuotes'
+import quotesDB from '../../../quotes_db.json'
 
 class LandingContainer extends Component {
   constructor() {
@@ -12,9 +13,24 @@ class LandingContainer extends Component {
     }
   }
 
+  hasZipcodeInDB (zipcode) {
+    const key = `${zipcode}-1`;
+    if (key in quotesDB) {
+      return true;
+    }
+
+    return false;
+  }
+
   handleSubmitZipcode (e) {
     e.preventDefault();
     const { zipcode } = this.state;
+
+    if (!this.hasZipcodeInDB(zipcode)) {
+      alert("Oh no! We don't have your zipcode in our database. Email us and we'll send you a quote.");
+      return;
+    }
+
     this.context.router.push({
       pathname: '/quotes',
       query: {
