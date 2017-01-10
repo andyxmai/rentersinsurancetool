@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import { Form, Col, FormControl, FormGroup, Button, ControlLabel, Checkbox, HelpBlock } from 'react-bootstrap';
+import { Form, Col, FormControl, FormGroup, Button, ControlLabel, HelpBlock } from 'react-bootstrap';
 
 function QuotesForm (props) {
   return (
