@@ -3,6 +3,7 @@ import './styles.css';
 import Quote from './Quote';
 import PolicyDetail from './PolicyDetail'
 import { Grid, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router'
 
 function Quotes (props) {
   return props.quotes.length ?
@@ -36,7 +37,7 @@ function Quotes (props) {
         <br />
         <div className='policy-details'>
           <h4 className='dark-gray'>Policy details</h4>
-          <p className='light-gray'>We think this standard package will fit your needs the best. If not, let us know and we’ll work together. <a href="/rentersinsurance101">Check out the definitions for these coverages here</a></p>
+          <p className='light-gray'>We think this standard package will fit your needs the best. If not, let us know and we’ll work together. <Link to='/rentersinsurance101'>Check out the definitions for these coverages here</Link></p>
           <Grid>
             <Row className="show-grid">
               <Col sm={4}><PolicyDetail name='Property coverage' amount='$15,000'/></Col>

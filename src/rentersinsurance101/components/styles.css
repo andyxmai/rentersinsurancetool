@@ -1,3 +1,7 @@
+.section-container {
+  margin: 20px;
+}
+
 .term {
   font-weight: bold;
   font-size: 18px;
@@ -5,5 +9,5 @@
 }
 
 .term-container {
-  margin: 20px 0;
+  margin: 0px 20px 20px 0;
 }
