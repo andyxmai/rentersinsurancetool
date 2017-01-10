@@ -113,12 +113,10 @@ class QuotesContainer extends Component {
       'email': this.state.email,
       'buildingType': this.state.buildingType,
       'numUnits': this.state.numUnits
-    }
+    };
 
     if (!quotes) {
       alert("Oh no! We don't have your zipcode in our database. Email us and we'll send you a quote.");
-
-
       window.amplitude.getInstance().logEvent('quotes_zipcode_not_in_database', properties);
 
       return;

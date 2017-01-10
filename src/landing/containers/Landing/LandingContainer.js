@@ -27,7 +27,7 @@ class LandingContainer extends Component {
     const { zipcode } = this.state;
 
     var eventProperties = {
-      'zipcode': zipcode,
+      'zipcode': zipcode
     };
 
     if (!this.hasZipcodeInDB(zipcode)) {
