@@ -12,8 +12,7 @@ app.use(express.static(path.resolve(__dirname, '..', 'build')));
 
 // Always return the main index.html, so react-router render the route in the client
 app.get('/*', (req, res) => {
-  console.log(path.resolve(__dirname, '..', 'build', 'index.html'));
-  res.sendFile(path.resolve(__dirname, '..', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, '..', 'public', 'index.html'));
 });
 
 module.exports = app;
